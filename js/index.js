@@ -1,10 +1,3 @@
-// metodos para arrays
-
-
-let numeros = [1, 4, 10, 14, 18, 20];
-
-numeros.forEach(verificar);
-
-function printNumber(value, index, array) {
-    console.log(`Index: ${index} Valor: ${value}`)
+for (let contador = 0; contador < 10; contador++) {
+    document.querySelector('.teste').innerHTML = contador + ' '
 }
