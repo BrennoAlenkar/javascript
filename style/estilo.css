@@ -15,3 +15,26 @@ body {
 .teste {
     margin-top: 20px;
 }
+
+.btnIniciar {
+    background-color: rgb(41, 244, 78);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnParar {
+    padding: 5px;
+    background-color: rgb(231, 40, 40);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.zerar {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
