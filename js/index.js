@@ -1,25 +1,20 @@
-function iniciarContagem() {
-    tempo = setInterval(function(){
-        let cronometro = document.querySelector('.teste').innerHTML;
-        cronometro = parseInt(cronometro) + 1;
+function verificar() {
+    let input = document.getElementById('input').value;
+    const ajax = new XMLHttpRequest();
+    ajax.open('GET', 'https://viacep.com.br/ws/'+ input +'/json/');
+    ajax.send();
 
-        document.querySelector('.teste').innerHTML = cronometro;
-        if(cronometro === 0) {
-            document.querySelector('.teste').innerHTML = 'Tempo esgotado';
-            pararContagem()
-            document.body.style.background = 'red';
+    ajax.onload = function () {
+        document.querySelector('.teste').innerHTML = this.responseText;
 
-        } else {
-            document.querySelector('.teste').innerHTML = cronometro;
-        }
-    }, 100)
-}
+        let obj = JSON.parse(this.responseText);
 
-function pararContagem() {
-    clearInterval(tempo)
-}
+        let cidade = obj.localidade;
+        let setor = obj.bairro;
+        let ddd = obj.ddd;
 
+        document.querySelector('.teste').innerHTML = `${cidade}, ${setor}, ${ddd}`;
 
-function zerar() {
-    location.reload()
+    }
+
 }
