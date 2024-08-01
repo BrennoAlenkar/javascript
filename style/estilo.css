@@ -1,17 +1,63 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: rgb(91, 95, 129);
+    background-color: rgb(104, 104, 152);
     color: white;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 50px;
-    
+    margin-top: 40px;
 }
+
+h1 {
+    padding: 15px;
+}
+
 .teste {
-    margin-top: 20px;
+    padding: 10px;
+}
+
+.btnIniciar {
+    background-color: rgb(37, 243, 37);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnParar {
+    background-color: rgb(237, 23, 23);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnZerar {
+    background-color: #ffffff;
+    color: black !important;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnIniciar:active {
+    background-color: rgb(28, 202, 28);
+}
+
+.btnParar:active {
+    background-color: rgb(212, 22, 22);
+}
+
+.btnZerar:active {
+    background-color: #e1e1e1;
 }
