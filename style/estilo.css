@@ -18,3 +18,31 @@ h1 {
 .teste {
     padding: 10px;
 }
+
+.btn1 {
+    background-color: rgb(39, 220, 39);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+
+.btn1:active {
+    background-color: rgb(33, 179, 33);
+    padding: 6px;
+
+}
+
+input {
+    height: 25px;
+
+    border-radius: 5px;
+    border: none;
+    text-indent: 4px;
+    font-size: 20px;
+
+}
