@@ -25,3 +25,5 @@ console.log(familia[1]);
 let arr = ["Brenno", 27, "Programador", 4400, true, {nome: "Jesus", carro: "Onix"}];
 
 console.log(arr);
+
+document.querySelector('h1').innerHTML = `Olá meu nome é ${arr[0]}, tenho ${arr[1]}anos de idade, e meu senhor é o ${arr[5].nome} que é o Cristo`;
