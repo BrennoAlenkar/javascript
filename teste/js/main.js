@@ -1,3 +1,4 @@
+
 const usuario = {
     nome: "Brenno",
     idade: 27,
@@ -31,4 +32,6 @@ const meuArray = [{
 
 ]
 
-console.log(meuArray[0].nome);
+console.log(meuArray[1].nome);
+
+
