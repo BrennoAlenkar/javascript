@@ -35,6 +35,7 @@ const meuArray = [{
 console.log(meuArray[1].nome);
 */
 
+/*
 function validarCPF(ganhoMes, gastos) {
     if (gastos > ganhoMes) {
         return "CPF pode ser cancelado a qualquer momento";
@@ -48,3 +49,12 @@ const pessoaQualquer = validarCPF(3000, 5000);
 
 console.log(brenno);
 console.log(pessoaQualquer);
+
+const teste = () => {
+    console.log("Meu nome é Brenno");
+}
+
+teste("Brenno");
+
+*/
+
