@@ -1,11 +1,22 @@
-var lista = ['Laranja', 'Maçã', 'Banana', 'Uva'];
+const cotacaoDolar = () => {
+    let valorUsuarioReal = document.getElementById("valorReal").value;
+    let valorUsuarioDolar = document.getElementById("cotacaoDolar").value;
+    let res = document.querySelector(".res");
 
-var listaUl = document.createElement('ul');
+    let valorReal = parseFloat(valorUsuarioReal);
+    let valorDolar = parseFloat(valorUsuarioDolar);
 
-var body = document.getElementsByTagName('body');
+    let soma = valorReal * valorDolar;
 
-console.log(body[0]);
+    if (isNaN(valorReal) || isNaN(valorDolar)) {
+        alert("Digite um número válido!");
+    }
 
-body[0].appendChild(listaUl);
+    if (valorDolar > 6.03 || valorDolar < 6.03) {
+        alert(`Esse valor dolar não está certo! o correto é $6,03! Digite corretamente`)
+    } else {
 
-var litaNoBody = document.getElementsByTagName()
+        res.innerHTML = `Covertendo o valor real de $${valorReal.toFixed(2)}, com o dolar em 6,03, vai ficar em $:${soma.toFixed(2)} reais!`
+
+    }
+}

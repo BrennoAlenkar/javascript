@@ -6,9 +6,19 @@
     <title>DOM</title>
 </head>
 <body>
-    <h1">Olá, Mundo do DOM!</h1>
-    <p>Dom</p>
-
+    <h1>Conversor de moedas</h1>
+    <label for="valorReal">Real:</label>
+    <input type="number" placeholder="Digite o valor Real" id="valorReal">
+    <br><br>
+    
+    <label for="cotacaoDolar">Dólar:</label>
+    <input type="number" placeholder="Digite o preço do dólar" id="cotacaoDolar">
+    <br><br>
+    
+    <button onclick="cotacaoDolar()">Verificar</button>
+    
+    <p class="res">Resposta vai aqui...</p>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
