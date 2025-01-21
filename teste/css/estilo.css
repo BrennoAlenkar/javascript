@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFF6FB;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", serif;
+}
+
+p {
+    color: rgb(110, 110, 110);
+}
+
+.texto__facebook {
+    word-spacing: 1px;
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(158, 158, 158);
+}
+
+h1 {
+    color: #1977F3;
+    font-size: 60px;
+}
+
+.p_esqueceu {
+    color: #1977F3;
+    
+}
+
+header {
+    display: flex;
+}
+
+.div__textos {
+    margin-left: 10%;
+    width: 650px;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.div__textos p {
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs {
+    margin-right: 10%;
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    border: none;
+    background-color: #f6f6f6;
+}
+
+.inputs a {
+    background-color: #1977F3;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.inputs a:hover {
+    background-color: #19aef3;
+}
+
+#btn_nova_conta {
+    background-color: #3eb928;
+    width: 150px;
+    height: 40px;
+}
+
+.textos__texte {
+    margin-top: 40px;
+    text-align: center;
+}
+
+span {
+    color: rgb(24, 24, 24);
+}
+
+@media screen and (max-width: 1000px ) {
+    .div__textos {
+       display: none;
+    }
+}
